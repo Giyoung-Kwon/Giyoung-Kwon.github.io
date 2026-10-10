@@ -60,6 +60,27 @@ strong {
   color: #21758f;
 }
 
+/* Header and content share one centered column (the theme offsets .page to the right; this evens the padding)
+   and the header rule spans only that column */
+.masthead {
+  border-bottom: none;
+}
+
+.greedy-nav {
+  border-bottom: 1px solid #f2f3f3;
+  padding-bottom: 0.5em;
+}
+
+@media (min-width: 68.75em) {
+  .page,
+  .masthead__menu {
+    width: 83.0508474576%;
+    float: right;
+    padding-left: 2.1186440678%;
+    padding-right: 19.0677966102%;
+  }
+}
+
 /* Home page: photo and intro text side by side */
 .intro-hero {
   display: flex;
