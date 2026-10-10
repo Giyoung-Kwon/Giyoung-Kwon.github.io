@@ -60,6 +60,13 @@ strong {
   color: #21758f;
 }
 
+/* Site name: large and light, as on sangmino.github.io (24px, weight 200) */
+.greedy-nav .visible-links li.masthead__menu-item--lg {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+}
+
 /* Header and content share one centered column (the theme offsets .page to the right; this evens the padding)
    and the header rule spans only that column */
 .masthead {
