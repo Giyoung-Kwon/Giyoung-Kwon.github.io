@@ -32,20 +32,20 @@ strong {
   font-weight: 700;
 }
 
-/* Links: maroon, underline in the same color */
+/* Links: teal as on sangmino.github.io, underline in the same color */
 .page__content a:not(.btn),
 .page__content a:visited:not(.btn) {
-  color: #800000;
+  color: #21758f;
   text-decoration-color: currentColor;
 }
 
 .page__content a:hover:not(.btn),
 .page__content a:active:not(.btn) {
-  color: #a00000;
+  color: #21758f;
   text-decoration-color: currentColor;
 }
 
-/* Top navigation: body-text color, maroon on hover, indicator bar follows text color */
+/* Top navigation: body-text color, link color on hover, indicator bar follows text color */
 .greedy-nav .visible-links > li > a {
   color: inherit;
   transition: color 0.2s ease;
@@ -57,7 +57,7 @@ strong {
 
 .greedy-nav .visible-links > li > a:hover,
 .greedy-nav .visible-links > li > a:focus {
-  color: #a00000;
+  color: #21758f;
 }
 
 /* Home page: photo and intro text side by side */
