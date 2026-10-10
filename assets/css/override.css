@@ -1,5 +1,16 @@
 /* Site-specific overrides on top of the AcademicPages theme (main.css). */
 
+/* Typeface as on sangmino.github.io: Helvetica for text, Helvetica Neue for headings and nav */
+body,
+.page__footer-copyright {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.masthead__inner-wrap {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /* Links: maroon, underline in the same color */
 .page__content a:not(.btn),
 .page__content a:visited:not(.btn) {
