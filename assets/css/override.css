@@ -11,6 +11,27 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Light text weight (bold stays bold) and a slightly smaller type scale than the theme (16px / 18px) */
+html {
+  font-size: 15px;
+}
+
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-weight: 300;
+}
+
+/* The theme uses "bolder", which on light text resolves to regular; pin bold to 700 */
+b,
+strong {
+  font-weight: 700;
+}
+
 /* Links: maroon, underline in the same color */
 .page__content a:not(.btn),
 .page__content a:visited:not(.btn) {
