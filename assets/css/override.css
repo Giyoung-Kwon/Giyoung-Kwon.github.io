@@ -11,17 +11,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Light text weight (bold stays bold) and a slightly smaller type scale than the theme (16px / 18px) */
-html {
-  font-size: 15px;
-}
-
-@media (min-width: 48em) {
-  html {
-    font-size: 16px;
-  }
-}
-
+/* Light text weight (bold stays bold); sizes stay at the theme default (16px / 18px) */
 body {
   font-weight: 300;
 }
