@@ -80,10 +80,15 @@ strong {
 }
 
 .intro-photo {
-  width: 320px;
+  width: 280px;
   max-width: 100%;
   height: auto;
   border-radius: 0.25rem;
+}
+
+/* Keep hyphenated names on one line */
+.nowrap {
+  white-space: nowrap;
 }
 
 /* Collapsible abstracts */
