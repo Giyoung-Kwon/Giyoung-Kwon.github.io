@@ -1,0 +1,109 @@
+/* Site-specific overrides on top of the AcademicPages theme (main.css). */
+
+/* Links: maroon, underline in the same color */
+.page__content a:not(.btn),
+.page__content a:visited:not(.btn) {
+  color: #800000;
+  text-decoration-color: currentColor;
+}
+
+.page__content a:hover:not(.btn),
+.page__content a:active:not(.btn) {
+  color: #a00000;
+  text-decoration-color: currentColor;
+}
+
+/* Top navigation: body-text color, maroon on hover, indicator bar follows text color */
+.greedy-nav .visible-links > li > a {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.greedy-nav .visible-links > li > a::before {
+  background-color: currentColor;
+}
+
+.greedy-nav .visible-links > li > a:hover,
+.greedy-nav .visible-links > li > a:focus {
+  color: #a00000;
+}
+
+/* Home page: photo and intro text side by side */
+.intro-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.intro-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: -0.25rem;
+}
+
+.intro-copy p {
+  margin: 0;
+}
+
+.intro-photo {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+/* Collapsible abstracts */
+details.abstract-box {
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+}
+
+details.abstract-box > summary {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+details.abstract-box[open] > summary {
+  margin-bottom: 0.25rem;
+}
+
+details.abstract-box > div {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+/* Phones: stack photo above text, let the nav wrap instead of overflowing */
+@media (max-width: 600px) {
+  .intro-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-copy {
+    margin-top: 0;
+  }
+
+  .greedy-nav {
+    min-width: 0;
+  }
+
+  .greedy-nav .visible-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .greedy-nav .visible-links li {
+    display: block;
+  }
+
+  .greedy-nav .visible-links li:first-child {
+    width: 100%;
+  }
+
+  .greedy-nav .visible-links a {
+    margin: 0 1.25rem 0 0;
+  }
+}
