@@ -119,6 +119,11 @@ strong {
   white-space: nowrap;
 }
 
+/* Presentation line under each paper: slightly smaller than body text */
+.presentations {
+  font-size: 0.9em;
+}
+
 /* Collapsible abstracts */
 details.abstract-box {
   margin-top: -1rem;
