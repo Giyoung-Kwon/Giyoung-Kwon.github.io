@@ -127,7 +127,7 @@ strong {
 /* Collapsible abstracts */
 details.abstract-box {
   margin-top: -1.3em;  /* cancel the paper paragraph's 1.3em bottom margin */
-  margin-bottom: 1.6rem;  /* space between papers */
+  margin-bottom: 1rem;  /* space between papers */
 }
 
 details.abstract-box > summary {
