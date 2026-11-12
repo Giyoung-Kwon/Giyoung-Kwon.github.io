@@ -126,7 +126,7 @@ strong {
 
 /* Collapsible abstracts */
 details.abstract-box {
-  margin-top: -1rem;
+  margin-top: -1.3em;  /* cancel the paper paragraph's 1.3em bottom margin */
   margin-bottom: 0.5rem;
 }
 
